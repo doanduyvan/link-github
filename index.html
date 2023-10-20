@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link-Github</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .monhoc:hover{
+            box-shadow: 0 0 10px orangered;
+        }
+       .monhoc{
+        padding: 10px 20px;
+        box-shadow: 0 0 5px gray;
+        width: fit-content;
+        >*{
+            display: block;
+            margin-top: 7px;
+        }
+        >h2{
+            margin: 0;
+        }
+        >a{
+            color: black;
+            text-decoration: none;
+        }
+        >a:hover{
+            color: orange;
+        }
+        >h2>span{
+            color: gray;
+            font-size: 16px;
+        }
+       }
+
+       @media screen and (max-width:700px) {
+            .main{
+                width: 100%;
+                flex-direction: column;
+                
+            }
+            .monhoc{
+                    width: 100%;
+                }
+       }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="monhoc">
+            <h2>1. Môn lập trình C</h2>
+            <span>https://github.com/doanduyvan/C-programming-language.git</span>
+        </div>
+        <div class="monhoc">
+            <h2>2. Xây dựng trang web</h2>
+            <span>https://github.com/doanduyvan/html-css.git</span>
+            <a href="https://doanduyvan.github.io/html-css" class="githubpages" target="_blank">Link Github Pages</a>
+        </div>
+        <div class="monhoc">
+            <h2>3. Java Core</h2>
+            <span>https://github.com/doanduyvan/Java-Core.git</span>
+        </div>
+        <div class="monhoc">
+            <h2>4. Lập trình JavaScript</h2>
+            <span>https://github.com/doanduyvan/javascript.git</span>
+            <a href="https://doanduyvan.github.io/javascript/ASM_JS/index.html" class="githubpages" target="_blank">Link Github Pages</a>
+        </div>
+        <div class="monhoc">
+            <h2>5. HTML5 && CSS3 có Responsive <span>(đang học)</span></h2>
+            <span>https://github.com/doanduyvan/HTML5-CSS3.git</span>
+            <a href="https://doanduyvan.github.io/HTML5-CSS3" class="githubpages" target="_blank">Link Github Pages</a>
+        </div>
+    </main>
+</body>
+</html>
